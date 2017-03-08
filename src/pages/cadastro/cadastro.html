@@ -1,0 +1,66 @@
+
+<ion-header  >
+  <ion-navbar color="secondary">
+    <ion-title>Cadastro do Pessoal</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class ="body">
+  <ion-list>
+    <ion-item>
+      <ion-label>Nome:</ion-label>
+      <ion-input name="nome"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Sobrenome:</ion-label>
+      <ion-input  name="sobrenome"></ion-input>
+    </ion-item>
+
+        <ion-list>
+          <ion-item>
+        <ion-label>Sexo:</ion-label>
+            <ion-select [(ngModel)]="sexo">
+              <ion-option value="masculino">Masculino</ion-option>
+              <ion-option value="feminino">Feminino</ion-option>
+            </ion-select>
+          </ion-item>
+        </ion-list>
+
+    <ion-item>
+      <ion-label>CPF:</ion-label>
+      <ion-input  name="cpf"></ion-input>
+    </ion-item>
+
+      <ion-item>
+        <ion-label>Telefone:</ion-label>
+        <ion-input  name="telefone"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Celular:</ion-label>
+        <ion-input  name="celular"></ion-input>
+      </ion-item>
+
+          <ion-title class="login">Cadastro de Login</ion-title>
+
+      <ion-item>
+        <ion-label>Email:</ion-label>
+        <ion-input  name="email"></ion-input>
+      </ion-item>
+
+        <ion-item>
+          <ion-label>Senha:</ion-label>
+          <ion-input  name="senha"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label >Confirmação de senha:</ion-label>
+          <ion-input  name="confim"></ion-input>
+        </ion-item>
+        <button ion-button color="secondary" full (click)="next()" class="next">Poximo</button>
+
+  </ion-list>
+
+
+</ion-content>

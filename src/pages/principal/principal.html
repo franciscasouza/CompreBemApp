@@ -1,0 +1,40 @@
+
+<ion-header>
+  <ion-navbar  hideBackButton color="secondary">
+
+  <ion-title>Compre Junto</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+  <ion-content padding>
+    <ion-grid>
+
+      <ion-row>
+
+        <ion-col  width-50>
+            <button class="lista" (click)="list()"  clear ion-button>
+              <ion-icon name="list"></ion-icon>
+            </button>
+              <label class="h9">Lista de produtos</label>
+            <button class="cartao" clear ion-button (click)="pagamento()">
+              <ion-icon name="card"></ion-icon>
+            </button>
+            <label class="h7">Pagamento</label>
+        </ion-col>
+
+        <ion-col width-50>
+          <button ion-button class="mensagem" clear (click)="men()" >
+            <ion-icon name="mail" ></ion-icon>
+          </button>
+          <label class="h7">Mensagem</label>
+          <button ion-button class="ajuste" (click)="ajustes()" clear >
+            <ion-icon name="settings" ></ion-icon>
+          </button>
+          <label class="h8">Ajustes</label>
+        </ion-col>
+
+      </ion-row>
+
+    </ion-grid>
+</ion-content>

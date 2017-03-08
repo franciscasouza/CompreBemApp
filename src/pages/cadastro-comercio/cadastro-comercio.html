@@ -1,0 +1,56 @@
+<ion-header  >
+  <ion-navbar color="secondary">
+    <ion-title>Cadastro do Comercio</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding class="body">
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Nome do comercio:</ion-label>
+      <ion-input name="nomeC"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Rua:</ion-label>
+      <ion-input  name="rua"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Bairro:</ion-label>
+      <ion-input  name="bairro"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>complemento:</ion-label>
+      <ion-input  name="complemento"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Numero:</ion-label>
+      <ion-input  name="numero"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>CEP:</ion-label>
+      <ion-input  name="cep"></ion-input>
+    </ion-item>
+
+   <ion-item>
+      <ion-label>Cidade:</ion-label>
+      <ion-input  name="cidade"></ion-input>
+   </ion-item>
+
+   <ion-item>
+      <ion-label>Estado:</ion-label>
+      <ion-input  name="estado"></ion-input>
+   </ion-item>
+
+  </ion-list>
+
+
+   <button ion-button color="secondary" full (click)="showAlert()" class="next">Finalizar</button>
+
+</ion-content>

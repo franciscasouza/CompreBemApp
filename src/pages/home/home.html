@@ -1,0 +1,41 @@
+/* Existem dois io-content, "cor e conteudo" um dentro do outro, onde o primero é para a cor
+verde e a imagem, e o segundo as caixas de texto e os botoes*/
+
+<ion-content class="cor" >
+ <img  src="./../../images/a.png" class="imagem">
+
+<ion-content class="conteudo" >
+        <ion-list>
+
+          <ion-item>
+            <ion-label>Login:</ion-label>
+            <ion-input name="login"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Senha:</ion-label>
+            <ion-input  name="senha"></ion-input>
+          </ion-item>
+        </ion-list>
+
+
+          <ion-grid>
+            <ion-row>
+              <ion-col width-50>
+                <button ion-button color="secondary"full (click)="logar()" >Entrar</button>
+              </ion-col>
+              <ion-col width-50>
+                <button ion-button color="secondary" full  (click)="next()">Cadastrar</button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+
+        <ion-item>
+          <ion-label >Lembrar-me?</ion-label>
+          <ion-checkbox ></ion-checkbox>
+        </ion-item>
+
+            <button ion-button clear >Esqueceu sua senha?</button>
+
+    </ion-content>
+</ion-content>
