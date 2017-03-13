@@ -1,0 +1,40 @@
+<ion-content padding>
+
+<img src="./../../images/a.png" width="240px" height="240px" >
+
+
+<ion-list>
+
+<ion-item>
+<ion-label>Login:</ion-label>
+<ion-input name="login"></ion-input>
+</ion-item>
+
+<ion-item>
+<ion-label>Senha:</ion-label>
+<ion-input  name="senha"></ion-input>
+</ion-item>
+
+</ion-list>
+
+<ion-grid>
+
+  <ion-row>
+    <ion-col  width-50>
+      <button ion-button small (click)="go()" >Sing in</button>
+      <ion-item>
+  <ion-label >lembra-me?</ion-label>
+  <ion-checkbox ></ion-checkbox>
+</ion-item>
+    </ion-col>
+
+    <ion-col width-50>
+      <button ion-button small >Sing up</button>
+      <button ion-button clear>esqueceu sua senha?</button>
+    </ion-col>
+  </ion-row>
+
+</ion-grid>
+
+
+</ion-content>

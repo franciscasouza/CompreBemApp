@@ -1,0 +1,36 @@
+
+<ion-header>
+
+  <ion-navbar color="secondary">
+    <ion-title>finalizar</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+
+<ion-content padding>
+  <label class="font"> Itens da Lista</label>
+  <content class="cor3">
+  </content>
+
+  <ion-content class="item"></ion-content>
+
+  <button class="but" color=secondary ion-button>Adicionar mais itens
+<ion-icon class="img" name="cart"></ion-icon>
+  </button>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col  width-50>
+  <label>total:</label>
+      </ion-col>
+<ion-col  width-50>
+<label class="font2">R$0,00</label>
+</ion-col>
+</ion-row>
+</ion-grid>
+  <ion-footer>
+<button full color="secondary" (click)="final()" ion-button>Finalizar pedido</button>
+  </ion-footer>
+</ion-content>

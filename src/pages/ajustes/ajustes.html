@@ -1,0 +1,28 @@
+
+<ion-header>
+  <ion-navbar  color="secondary">
+  <ion-title>Ajustes</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <p><label>Perfil</label></p>
+<button  clear ion-button class="but1">
+  <ion-icon name="contact" class="img1"></ion-icon>
+Editar perfil</button >
+  <hr class="linha">
+
+
+<p><label>Configuração de rede</label></p>
+<button  clear ion-button (click)="atu()" class="but1">
+  <ion-icon name="sync" class="img1"></ion-icon>
+  Atualização Dos Dados</button >
+  <hr class="linha">
+
+  <p><label>Trocar de usuário</label></p>
+  <button  clear ion-button class="but1" (click)="sair()">
+    <ion-icon name="exit" class="img1"></ion-icon>
+    Sair</button >
+    <hr class="linha">
